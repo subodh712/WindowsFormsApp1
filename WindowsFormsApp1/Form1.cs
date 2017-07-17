@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
                 connection.Open();
                 SqlCommand cmd = new SqlCommand("Select * from studentdetail",connection);
                 SqlDataReader reader = cmd.ExecuteReader();
-                String dir = "d:\\Images\\";
+                String dir = "D:\\Images\\";
                 if (!Directory.Exists(dir))
                 {
                     Directory.CreateDirectory(dir);
@@ -64,7 +64,7 @@ namespace WindowsFormsApp1
                     fs.Close();
                 }
 
-                MessageBox.Show("Exported images Successfully to "+dir, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Exported all images to "+dir+" Successfully!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
