@@ -32,6 +32,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportAllImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStripMenuItem,
-            this.viewToolStripMenuItem});
+            this.viewToolStripMenuItem,
+            this.exportAllImagesToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
             this.toolStripMenuItem1.Text = "Menu";
@@ -57,16 +59,23 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.viewToolStripMenuItem.Text = "View";
             this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
+            // 
+            // exportAllImagesToolStripMenuItem
+            // 
+            this.exportAllImagesToolStripMenuItem.Name = "exportAllImagesToolStripMenuItem";
+            this.exportAllImagesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.exportAllImagesToolStripMenuItem.Text = "Export all images";
+            this.exportAllImagesToolStripMenuItem.Click += new System.EventHandler(this.exportAllImagesToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -89,6 +98,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportAllImagesToolStripMenuItem;
     }
 }
 
