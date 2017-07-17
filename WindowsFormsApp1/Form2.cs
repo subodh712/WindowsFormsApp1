@@ -59,5 +59,11 @@ namespace WindowsFormsApp1
                 this.Close();
             }
         }
+
+
+        private void validation(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
     }
 }

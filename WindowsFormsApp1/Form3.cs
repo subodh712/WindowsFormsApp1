@@ -60,5 +60,11 @@ namespace WindowsFormsApp1
             else
                 MessageBox.Show("Enter the Name!!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+
+        private void validation(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
     }
 }
