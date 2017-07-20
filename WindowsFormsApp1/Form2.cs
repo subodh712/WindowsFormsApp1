@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "jpeg|*.jpg|bmp|*.bmp|all files|*.*";
+            openFileDialog1.Filter = "jpeg|*.jpg|bmp|*.bmp";
             DialogResult res = openFileDialog1.ShowDialog();
             if (res == DialogResult.OK)
             {
