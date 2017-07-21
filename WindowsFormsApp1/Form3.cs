@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         public Form3()
         {
             InitializeComponent();
-            string connetionString = "Data Source=DESK\\SQLEXPRESS;Initial Catalog=TestForm;Trusted_Connection=true";
+            string connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["WindowsFormsApp1.Properties.Settings.TestFormConnectionString"].ConnectionString;
             connection = new SqlConnection(connetionString);
         }
 

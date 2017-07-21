@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             openFileDialog1 = new OpenFileDialog();
 
-            string connetionString = "Data Source=DESK\\SQLEXPRESS;Initial Catalog=TestForm;Trusted_Connection=true";
+            string connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["WindowsFormsApp1.Properties.Settings.TestFormConnectionString"].ConnectionString;
             connection = new SqlConnection(connetionString);
         }
 

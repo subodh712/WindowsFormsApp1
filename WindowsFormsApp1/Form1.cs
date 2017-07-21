@@ -5,10 +5,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace WindowsFormsApp1
 {
@@ -34,7 +32,7 @@ namespace WindowsFormsApp1
         private void exportAllImagesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SqlConnection connection;
-            string connetionString = "Data Source=DESK\\SQLEXPRESS;Initial Catalog=TestForm;Trusted_Connection=true";
+            string connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["WindowsFormsApp1.Properties.Settings.TestFormConnectionString"].ConnectionString;
             connection = new SqlConnection(connetionString);
             try
             { 
